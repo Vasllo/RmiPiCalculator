@@ -3,8 +3,7 @@ import java.rmi.server.*;
 
 public class PICalculator extends UnicastRemoteObject implements PICalculatorInterface {
     @Override
-    public double calculator(int stepNumbers) throws RemoteException {
-        long num_steps = 100000;
+    public double calculator(int num_steps) throws RemoteException {
         double step = 0.0;
         double x = 0.0;
         double pi = 0.0;
